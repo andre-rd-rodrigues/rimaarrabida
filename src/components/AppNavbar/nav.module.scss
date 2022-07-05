@@ -1,0 +1,31 @@
+@import "styles/mixins";
+
+.nav {
+  font-weight: 600;
+
+  img {
+    max-width: 133px;
+  }
+  a {
+    color: $primary !important;
+    margin: 0 1.5rem;
+    position: relative;
+    padding: 0 !important;
+    &::after {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      visibility: hidden;
+      background-color: $red;
+      transition: all 0.3s ease;
+      transform: scaleX(0);
+    }
+    &:hover:after {
+      visibility: visible;
+      transform: scaleX(1);
+    }
+  }
+}

@@ -1,7 +1,7 @@
 import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import logo from "assets/logo.png";
+import logo from "assets/images/logo.png";
 import styles from "./nav.module.scss";
 import AppButton from "components/AppButton/AppButton";
 
@@ -31,7 +31,7 @@ const AppNavbar = () => {
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>
-      <AppButton text="INSCRIÇÕES" />
+      <AppButton label="INSCRIÇÕES" />
     </Navbar>
   );
 };

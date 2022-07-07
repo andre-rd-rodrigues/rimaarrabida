@@ -1,7 +1,9 @@
 @import "styles/mixins";
 
 .nav {
+  position: fixed;
   font-weight: 600;
+  margin: 20px;
 
   img {
     max-width: 133px;

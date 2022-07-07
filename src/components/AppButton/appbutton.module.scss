@@ -1,5 +1,9 @@
 @import "styles/mixins";
 
-.appbutton {
+.button {
   @include button($red, white);
+  svg {
+    margin-right: 15px;
+    vertical-align: top;
+  }
 }

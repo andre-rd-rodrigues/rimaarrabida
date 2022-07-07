@@ -1,0 +1,50 @@
+@import "styles/mixins";
+
+.container {
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.welcome {
+  margin: auto;
+  max-width: 925px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: $primary;
+  & img[id="welcome-mountain"] {
+    margin-bottom: 50px;
+    width: 100%;
+  }
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  div[id="welcome-logo"] {
+    display: flex;
+    align-items: flex-end;
+    width: 50%;
+    & img {
+      width: 100%;
+    }
+  }
+
+  button {
+    margin: 10px 0px;
+  }
+}
+
+.lottie {
+  position: absolute;
+  top: 70%;
+  right: -100px;
+  transform: scale(-1, -1);
+  svg {
+    cursor: default;
+  }
+}

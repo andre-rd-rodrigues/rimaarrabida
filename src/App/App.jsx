@@ -5,6 +5,7 @@ import Homepage from "pages/Homepage/Homepage";
 import Trabalhos from "pages/Trabalhos/Trabalhos";
 import "styles/global.scss";
 import About from "pages/About/About";
+import Footer from "components/Footer/Footer";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/about-us" component={About} />
         <Route path="/" component={Homepage} />
       </Switch>
+      <Footer />
     </div>
   );
 };

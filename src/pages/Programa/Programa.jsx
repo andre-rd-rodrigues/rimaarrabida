@@ -5,7 +5,7 @@ import styles from "./programa.module.scss";
 
 const Programa = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="programa">
       <h2>Programa</h2>
       <span className={styles.break} />
 

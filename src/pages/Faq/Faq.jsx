@@ -6,7 +6,7 @@ import Question from "components/AppAccordion/AppAccordion";
 
 const Faq = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="faqs">
       <div id="faq-mountain">
         <img src={mountain} alt="" />
       </div>

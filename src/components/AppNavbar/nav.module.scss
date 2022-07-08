@@ -1,15 +1,16 @@
 @import "styles/mixins";
 
-#inscriçoes {
+.container {
   position: sticky;
-}
-
-.horizontal {
-  font-weight: 600;
-  margin: 20px;
+  top: 0;
   background-color: white;
   z-index: 1;
+}
 
+#horizontal {
+  font-weight: 600;
+  background-color: white;
+  z-index: 1;
   img {
     max-width: 133px;
   }

@@ -11,58 +11,14 @@ import AppContainer from "components/AppContainer/AppContainer";
 const AppNavbar = () => {
   const iconSize = 22;
 
-  const Horizontal = () => (
-    <div>
-      <Navbar
-        sticky="top"
-        expand="lg"
-        variant="default"
-        className={styles.horizontal}
-      >
-        <Navbar.Brand to="/" as={Link}>
-          <img src={logo} alt="RIMA 2022" />
-        </Navbar.Brand>
-
-        <Navbar.Toggle aria-controls="basic-navbar-nav">
-          <AppIcon icon="menu" />
-        </Navbar.Toggle>
-        <Navbar.Collapse
-          id="basic-navbar-nav"
-          className="justify-content-center"
-        >
-          <Nav>
-            <Nav.Link to="/#programa" as={HashLink}>
-              PROGRAMA
-            </Nav.Link>
-            <Nav.Link to="/edições" as={Link}>
-              EDIÇÕES
-            </Nav.Link>
-            <Nav.Link to="/#faqs" as={HashLink}>
-              FAQ
-            </Nav.Link>
-            <Nav.Link to="/sobre" as={Link}>
-              QUEM SOMOS
-            </Nav.Link>
-            <Nav.Link to="/trabalhos" as={Link}>
-              TRABALHOS
-            </Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-        <div id={styles.inscriçoes}>
-          <AppButton label="INSCRIÇÕES" />
-        </div>
-      </Navbar>
-    </div>
-  );
-
   const NewNav = () => (
-    <div>
+    <div className={styles.container}>
       <Row>
         <Col sm={9} md={9} lg={10}>
-          <nav className="navbar navbar-expand-lg">
-            <a className="navbar-brand" href="/">
-              Navbar
-            </a>
+          <nav className="navbar navbar-expand-lg" id={styles.horizontal}>
+            <Link to="/">
+              <img src={logo} alt="RIMA 2022" />
+            </Link>
             <button
               class="navbar-toggler"
               type="button"
@@ -75,7 +31,7 @@ const AppNavbar = () => {
               <AppIcon icon="menu" />
             </button>
             <div
-              className="collapse navbar-collapse"
+              className="collapse navbar-collapse justify-content-center"
               id="navbarSupportedContent"
             >
               <Nav.Link to="/#programa" as={HashLink}>

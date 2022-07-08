@@ -1,3 +1,4 @@
+import Faq from "pages/Faq/Faq";
 import Programa from "pages/Programa/Programa";
 import React from "react";
 import { Container } from "react-bootstrap";
@@ -10,6 +11,7 @@ const Homepage = () => {
       <Welcome />
       <Container>
         <Programa />
+        <Faq />
       </Container>
     </div>
   );

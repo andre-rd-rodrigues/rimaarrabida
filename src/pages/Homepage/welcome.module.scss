@@ -2,13 +2,14 @@
 
 .container {
   position: relative;
-  min-height: 80vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
 .welcome {
+  transform: translateY(-50px);
   margin: auto;
   max-width: 700px;
   display: flex;

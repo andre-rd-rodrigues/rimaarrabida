@@ -28,6 +28,11 @@
       visibility: visible;
       transform: scaleX(1);
     }
+    &[class="navbar-brand"] {
+      &::after {
+        display: none;
+      }
+    }
   }
 }
 

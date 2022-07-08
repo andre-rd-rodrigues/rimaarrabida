@@ -9,7 +9,7 @@ import AppIcon from "components/AppIcon/AppIcon";
 const AppNavbar = () => {
   const Horizontal = () => (
     <Navbar sticky="top" expand="md" className={styles.horizontal}>
-      <Navbar.Brand href="#home" as={Link}>
+      <Navbar.Brand to="/" as={Link}>
         <img src={logo} alt="RIMA 2022" />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -24,10 +24,10 @@ const AppNavbar = () => {
           <Nav.Link href="#link" as={Link}>
             FAQ
           </Nav.Link>
-          <Nav.Link href="#link" as={Link}>
-            ORGANIZAÇÃO
+          <Nav.Link to="/about-us" as={Link}>
+            QUEM SOMOS
           </Nav.Link>
-          <Nav.Link href="#link" as={Link}>
+          <Nav.Link to="/trabalhos" as={Link}>
             TRABALHOS
           </Nav.Link>
         </Nav>

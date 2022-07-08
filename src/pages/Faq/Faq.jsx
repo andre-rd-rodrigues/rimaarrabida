@@ -1,8 +1,8 @@
 import React from "react";
 import mountain from "assets/images/mountainFaq.png";
-import Question from "./Question";
 import styles from "./faq.module.scss";
 import { faqs } from "mocks/local-data";
+import Question from "components/AppAccordion/AppAccordion";
 
 const Faq = () => {
   return (
@@ -17,7 +17,7 @@ const Faq = () => {
         </div>
         <div className={styles.questionsContainer}>
           {faqs?.map((item, index) => (
-            <Question key={index} content={item} />
+            <Question key={index} title={item.question} content={item.answer} />
           ))}
         </div>
       </div>

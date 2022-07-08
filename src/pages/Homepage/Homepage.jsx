@@ -1,7 +1,7 @@
+import Container from "components/AppContainer/AppContainer";
 import Faq from "pages/Faq/Faq";
 import Programa from "pages/Programa/Programa";
 import React from "react";
-import { Container } from "react-bootstrap";
 import styles from "./homepage.module.scss";
 import Welcome from "./Welcome";
 

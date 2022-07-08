@@ -1,0 +1,17 @@
+.accordion {
+  margin-bottom: 25px;
+  div[class="card"] {
+    border: none;
+    box-shadow: 5px 5px 10px -2px rgba(0, 0, 0, 0.162);
+    cursor: pointer;
+  }
+  div[class="card-header"] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h5 {
+      font-weight: 400;
+      font-size: 1.1rem;
+    }
+  }
+}

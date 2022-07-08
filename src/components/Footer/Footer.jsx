@@ -13,7 +13,7 @@ const Footer = () => {
     },
     {
       label: "quem somos",
-      link: "/about-us"
+      link: "/sobre"
     },
     {
       label: "edições",

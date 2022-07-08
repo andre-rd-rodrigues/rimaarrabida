@@ -27,7 +27,7 @@ const AppNavbar = () => {
           <Nav.Link to="/#faqs" as={HashLink}>
             FAQ
           </Nav.Link>
-          <Nav.Link to="/about-us" as={Link}>
+          <Nav.Link to="/sobre" as={Link}>
             QUEM SOMOS
           </Nav.Link>
           <Nav.Link to="/trabalhos" as={Link}>

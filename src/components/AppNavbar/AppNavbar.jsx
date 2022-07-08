@@ -4,10 +4,11 @@ import { Link } from "react-router-dom";
 import logo from "assets/images/logo.png";
 import styles from "./nav.module.scss";
 import AppButton from "components/AppButton/AppButton";
+import AppIcon from "components/AppIcon/AppIcon";
 
 const AppNavbar = () => {
-  return (
-    <Navbar expand="md" className={styles.nav}>
+  const Horizontal = () => (
+    <Navbar sticky="top" expand="md" className={styles.horizontal}>
       <Navbar.Brand href="#home" as={Link}>
         <img src={logo} alt="RIMA 2022" />
       </Navbar.Brand>
@@ -33,6 +34,24 @@ const AppNavbar = () => {
       </Navbar.Collapse>
       <AppButton label="INSCRIÇÕES" />
     </Navbar>
+  );
+  const Vertical = () => (
+    <div className={styles.vertical}>
+      <a href="www.facebook.com">
+        <AppIcon icon="facebook" size={25} color="aqua" />
+      </a>
+
+      <a href="www.instagram.com">
+        <AppIcon icon="instagram" size={25} color="aqua" />
+      </a>
+    </div>
+  );
+
+  return (
+    <>
+      <Horizontal />
+      <Vertical />
+    </>
   );
 };
 

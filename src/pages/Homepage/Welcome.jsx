@@ -4,7 +4,7 @@ import mountain from "assets/icons/mountainMoon.svg";
 import logo from "assets/images/logo.png";
 import scroll from "assets/lotties/scroll.json";
 import styles from "./welcome.module.scss";
-import AppLottie from "components/AppLottie/AppLottie";
+import Lottie from "components/AppLottie/AppLottie";
 
 const Welcome = () => {
   return (
@@ -26,7 +26,7 @@ const Welcome = () => {
           </div>
         </div>
       </div>
-      <AppLottie size={300} styles={styles.lottie} animation={scroll} />
+      <Lottie size={230} styles={styles.lottie} animation={scroll} />
     </div>
   );
 };

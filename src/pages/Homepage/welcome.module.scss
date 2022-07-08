@@ -10,14 +10,19 @@
 
 .welcome {
   margin: auto;
-  max-width: 925px;
+  max-width: 700px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   color: $primary;
+  h1,
+  h2 {
+    font-size: 35px;
+  }
   & img[id="welcome-mountain"] {
-    margin-bottom: 50px;
     width: 100%;
+
+    margin-bottom: 40px;
   }
 }
 .content {
@@ -41,7 +46,7 @@
 
 .lottie {
   position: absolute;
-  top: 70%;
+  top: 53%;
   right: -100px;
   transform: scale(-1, -1);
   svg {

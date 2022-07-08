@@ -20,8 +20,8 @@ const Welcome = () => {
             <img src={logo} alt="RIMA" />
           </div>
           <div>
-            <h1>II RIMA Meeting 2022</h1>
-            <h2>22 - 23 Julho</h2>
+            <h1>RIMA Meeting ´22</h1>
+            <h2>21 Outubro</h2>
             <AppButton icon="download" label="PROGRAMA" />
           </div>
         </div>

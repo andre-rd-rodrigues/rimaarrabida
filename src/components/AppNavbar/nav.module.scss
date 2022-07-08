@@ -1,9 +1,15 @@
 @import "styles/mixins";
 
+#inscriçoes {
+  position: sticky;
+}
+
 .horizontal {
   font-weight: 600;
   margin: 20px;
   background-color: white;
+  z-index: 1;
+
   img {
     max-width: 133px;
   }

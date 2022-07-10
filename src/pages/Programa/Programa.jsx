@@ -10,12 +10,12 @@ const Programa = () => {
       <span className={styles.break} />
 
       <Row className={styles.schedule}>
-        <Col md={3}>
+        <Col md={2}>
           <div className="program-date">
             <h3>{program.date}</h3>
           </div>
         </Col>
-        <Col md={9}>
+        <Col md={10}>
           <div className="program-content-container">
             {program.program?.map((item) => (
               <div>

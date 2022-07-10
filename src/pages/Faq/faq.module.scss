@@ -4,6 +4,9 @@
   div[id="faq-mountain"] {
     text-align: center;
     margin: 14rem 0;
+    img {
+      width: 100%;
+    }
   }
 }
 
@@ -21,6 +24,15 @@
       width: 25px;
       border-top: 4px solid $aqua;
       transform: translateX(-13px);
+    }
+  }
+}
+
+@media only screen and (max-width: $breaking-point-sm) {
+  .container {
+    div[id="faq-mountain"] {
+      text-align: center;
+      margin: 10rem 0;
     }
   }
 }

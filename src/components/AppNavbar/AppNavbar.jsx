@@ -1,22 +1,23 @@
-import React from "react";
-import { Navbar, Nav, Col, Row } from "react-bootstrap";
+import React, { useState } from "react";
+import { Nav, Col, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import logo from "assets/images/logo.png";
 import styles from "./nav.module.scss";
 import AppButton from "components/AppButton/AppButton";
 import AppIcon from "components/AppIcon/AppIcon";
-import AppContainer from "components/AppContainer/AppContainer";
 
 const AppNavbar = () => {
+  const [show, setShow] = useState(false);
+
   const iconSize = 22;
 
   const NewNav = () => (
     <div className={styles.container}>
-      <Row>
+      <Row className="align-items-center" style={{ margin: 0 }}>
         <Col sm={9} md={9} lg={10}>
           <nav className="navbar navbar-expand-lg" id={styles.horizontal}>
-            <Link to="/">
+            <Link to="/" className="navbar-brand">
               <img src={logo} alt="RIMA 2022" />
             </Link>
             <button
@@ -27,32 +28,47 @@ const AppNavbar = () => {
               aria-controls="navbarSupportedContent"
               aria-expanded="false"
               aria-label="Toggle navigation"
+              onClick={() => setShow(true)}
             >
               <AppIcon icon="menu" />
             </button>
             <div
-              className="collapse navbar-collapse justify-content-center"
+              className={`collapse navbar-collapse justify-content-center ${
+                show && "show"
+              }`}
               id="navbarSupportedContent"
             >
-              <Nav.Link to="/#programa" as={HashLink}>
+              <Nav.Link
+                to="/#programa"
+                as={HashLink}
+                onClick={() => setShow(false)}
+              >
                 PROGRAMA
               </Nav.Link>
-              <Nav.Link to="/edições" as={Link}>
+              <Nav.Link to="/edições" as={Link} onClick={() => setShow(false)}>
                 EDIÇÕES
               </Nav.Link>
-              <Nav.Link to="/#faqs" as={HashLink}>
+              <Nav.Link
+                to="/#faqs"
+                as={HashLink}
+                onClick={() => setShow(false)}
+              >
                 FAQ
               </Nav.Link>
-              <Nav.Link to="/sobre" as={Link}>
+              <Nav.Link to="/sobre" as={Link} onClick={() => setShow(false)}>
                 QUEM SOMOS
               </Nav.Link>
-              <Nav.Link to="/trabalhos" as={Link}>
+              <Nav.Link
+                to="/trabalhos"
+                as={Link}
+                onClick={() => setShow(false)}
+              >
                 TRABALHOS
               </Nav.Link>
             </div>
           </nav>
         </Col>
-        <Col sm={2} md={2} lg={2}>
+        <Col sm={2} md={2} lg={2} className={styles.inscriçoes}>
           <AppButton label="INSCRIÇÕES" />
         </Col>
       </Row>

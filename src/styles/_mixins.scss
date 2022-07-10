@@ -28,6 +28,20 @@ $breaking-point-md: 990px;
 $breaking-point-sm: 414px;
 $breaking-point-xs: 330px;
 
+@mixin responsive_text {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-size: 7vw !important;
+  }
+
+  p {
+    font-size: 5vw;
+  }
+}
+
 //Exports
 :export {
   primary: $primary;

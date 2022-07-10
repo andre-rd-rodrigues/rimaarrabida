@@ -55,3 +55,22 @@
     width: 40% !important;
   }
 }
+
+@media only screen and (max-width: $breaking-point-sm) {
+  .welcome {
+    padding: 0 20px;
+
+    @include responsive_text;
+  }
+  .content {
+    justify-content: center;
+    text-align: center;
+
+    div[id="welcome-logo"] {
+      margin-bottom: 20px;
+    }
+  }
+  .lottie {
+    display: none;
+  }
+}

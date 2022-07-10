@@ -5,12 +5,16 @@
 }
 
 .shape {
+  div[role="button"] {
+    width: 100% !important;
+    height: 100% !important;
+  }
   img {
     position: absolute;
     top: 175px;
     left: 205px;
     z-index: 1;
-    width: 140px;
+    width: 30%;
   }
 }
 
@@ -58,5 +62,24 @@
 
   div:last-child {
     justify-self: flex-start;
+  }
+}
+
+@media only screen and (max-width: $breaking-point-sm) {
+  .about {
+    @include responsive_text;
+  }
+  .shape {
+    svg {
+      transform: scale(0.5);
+    }
+    img {
+      top: 110px;
+      left: 125px;
+    }
+  }
+
+  .organization {
+    justify-content: center;
   }
 }

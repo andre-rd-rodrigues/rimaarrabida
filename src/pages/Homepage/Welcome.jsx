@@ -18,7 +18,7 @@ const Welcome = () => {
           />
           <div className={styles.content}>
             <div id="welcome-logo">
-              <img src="/logo.png" alt="RIMA" />
+              <img src={process.env.PUBLIC_URL + "/logo.png"} alt="RIMA" />
             </div>
             <div>
               <h1>RIMA Meeting ´22</h1>

@@ -17,7 +17,7 @@ const AppNavbar = () => {
         <Col sm={9} md={9} lg={10}>
           <nav className="navbar navbar-expand-lg" id={styles.horizontal}>
             <Link to="/" className="navbar-brand">
-              <img src="/logo.png" alt="RIMA 2022" />
+              <img src={process.env.PUBLIC_URL + "/logo.png"} alt="RIMA 2022" />
             </Link>
             <button
               class="navbar-toggler"

@@ -1,5 +1,5 @@
 const program = {
-  date: "QUIT 21 OUT",
+  date: "21 OUT",
   program: [
     {
       hour: "9:00",

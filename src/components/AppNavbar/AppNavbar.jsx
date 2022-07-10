@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Nav, Col, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
-import logo from "assets/images/logo.png";
 import styles from "./nav.module.scss";
 import AppButton from "components/AppButton/AppButton";
 import AppIcon from "components/AppIcon/AppIcon";
@@ -18,7 +17,7 @@ const AppNavbar = () => {
         <Col sm={9} md={9} lg={10}>
           <nav className="navbar navbar-expand-lg" id={styles.horizontal}>
             <Link to="/" className="navbar-brand">
-              <img src={logo} alt="RIMA 2022" />
+              <img src="/logo.png" alt="RIMA 2022" />
             </Link>
             <button
               class="navbar-toggler"

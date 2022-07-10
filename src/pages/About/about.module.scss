@@ -23,12 +23,13 @@
     margin-bottom: 30px;
   }
   p {
+    text-indent: 30px;
     &:first-child {
       margin-bottom: 5px;
       font-weight: lighter;
     }
-    &:last-child {
-      text-indent: 30px;
+    &:first-child {
+      text-indent: 0;
     }
   }
 }
@@ -55,13 +56,22 @@
 }
 
 .organization {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 200px);
-  justify-content: space-between;
-  grid-gap: 20px;
+  div[id="people-container"] {
+    margin-bottom: 60px;
+    h3 {
+      color: $primary;
+      margin-bottom: 50px;
+    }
+  }
+  div[id="people-avatar-container"] {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    justify-content: space-between;
+    grid-gap: 20px;
 
-  div:last-child {
-    justify-self: flex-start;
+    div:last-child {
+      justify-self: flex-start;
+    }
   }
 }
 
@@ -80,6 +90,8 @@
   }
 
   .organization {
-    justify-content: center;
+    div[id="people-avatar-container"] {
+      justify-content: center;
+    }
   }
 }

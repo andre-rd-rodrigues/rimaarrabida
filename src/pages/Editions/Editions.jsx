@@ -1,5 +1,6 @@
 import Container from "components/AppContainer/AppContainer";
 import Title from "components/Title/Title";
+import programa from "assets/images/programa_2021.png";
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import styles from "./editions.module.scss";
@@ -16,17 +17,22 @@ const Editions = () => {
               <h2> I RIMA</h2>
               <span>2021</span>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque
-                ad quod placeat consectetur sapiente libero distinctio aut alias
-                eveniet culpa? Ratione commodi temporibus nam provident repellat
-                quasi laboriosam quas quo?
+                A primeira edição da Reunião de Internos Formação Específica de
+                Medicina Geral e Familiar da Arrábida (RIMA) ocorreu no dia 8 de
+                Outubro de 2021 com o tema “Viver e Cuidar na Arrábida: O
+                Idoso”, que contou com a presença de cerca de 90 participantes,
+                via digital.
+              </p>
+              <p>
+                Os internos do 54° grupo organizam-se agora para recriar a
+                segunda edição do RIMA, sob o tema “MGF Fora da Caixa”, dando
+                seguimento a este evento que se espera continuar a unir
+                sucessivas gerações de internos de MGF do ACeS Arrábida ao longo
+                dos próximos anos.
               </p>
             </Col>
             <Col md={6} sm={12} lg={6}>
-              <img
-                src="https://rural-urban.eu/sites/default/files/Simple%20programme_09_14.png"
-                alt=""
-              />
+              <img src={programa} alt="I RIMA 2021" />
             </Col>
           </Row>
         </div>

@@ -18,7 +18,9 @@
 .schedule {
   display: flex;
   justify-content: space-between;
+
   div[class="program-date"] {
+    margin-bottom: 35px;
     h3 {
       font-size: 1.5rem;
       font-weight: bold;
@@ -28,17 +30,20 @@
   div[class="program-content-container"] {
     color: $dark;
     font-size: 1.4rem;
+
     div {
       display: flex;
+      align-items: baseline;
     }
   }
 
   div[class="program-content-event-hour"] {
-    width: 130px;
     white-space: nowrap;
+    font-weight: bold;
+    font-size: 18px;
   }
   div[class="program-content-event"] {
-    margin: 0 0 30px 50px;
+    margin: 0 0 30px 70px;
     font-weight: 500;
     display: flex;
     flex-direction: column;
@@ -53,9 +58,6 @@
   .container {
     @include responsive_text;
 
-    div[class="program-date"] {
-      margin-bottom: 35px;
-    }
     div[class="program-content-event"] {
       margin: 0 0 15px 30px;
     }

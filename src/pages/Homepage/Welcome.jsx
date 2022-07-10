@@ -1,7 +1,6 @@
 import AppButton from "components/AppButton/AppButton";
 import React from "react";
 import mountain from "assets/svg/mountainMoon.svg";
-import logo from "assets/images/logo.png";
 import scroll from "assets/lotties/scroll.json";
 import styles from "./welcome.module.scss";
 import Lottie from "components/AppLottie/AppLottie";
@@ -19,7 +18,7 @@ const Welcome = () => {
           />
           <div className={styles.content}>
             <div id="welcome-logo">
-              <img src={logo} alt="RIMA" />
+              <img src="/logo.png" alt="RIMA" />
             </div>
             <div>
               <h1>RIMA Meeting ´22</h1>

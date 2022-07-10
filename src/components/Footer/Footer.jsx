@@ -2,8 +2,8 @@ import AppIcon from "components/AppIcon/AppIcon";
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import logo from "assets/images/logo.png";
 import styles from "./footer.module.scss";
+import { HashLink } from "react-router-hash-link";
 
 const Footer = () => {
   const links = [
@@ -17,7 +17,7 @@ const Footer = () => {
     },
     {
       label: "edições",
-      link: "/#edições"
+      link: "/edições"
     },
     {
       label: "trabalhos",
@@ -25,7 +25,7 @@ const Footer = () => {
     },
     {
       label: "FAQ",
-      link: "/#faq"
+      link: "/#faqs"
     }
   ];
 
@@ -37,7 +37,9 @@ const Footer = () => {
             <ul>
               {links.map(({ link, label }) => (
                 <li>
-                  <Link to={link}>{label}</Link>
+                  <Link to={link} as={HashLink}>
+                    {label}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -56,7 +58,7 @@ const Footer = () => {
         </Col>
         <Col>
           <div className={styles.logo}>
-            <img src={logo} alt="RIMA 2022" />
+            <img src="/logo.png" alt="RIMA 2022" />
             <p>II RIMA | 2022</p>
             <div>
               <a href="www.facebook.com">

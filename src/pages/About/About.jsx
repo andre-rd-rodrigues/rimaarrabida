@@ -26,13 +26,21 @@ const About = () => {
               <p>RIMA</p>
               <h4>Reunião de Internos de MGF da Arrábia</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.{" "}
+                A Reunião de Internos de Medicina Geral e Familiar do ACeS da
+                Arrábida é, tal como o nome indica, composta por médicos
+                internos de formação específica em MGF.
+              </p>
+              <p>
+                A edição de 2022 será organizada predominantemente por internos
+                do atual 4º ano de formação (do 52º e 54º grupos), bem como por
+                elementos de outros anos.
+              </p>
+              <p>
+                Assim, e como novidade face à 1ª edição, a comissão organizadora
+                diversifica-se por vários grupos de formação, mesclando a
+                experiência da edição anterior, a determinação da geração que
+                agora termina o internato e a curiosidade de internos de outros
+                anos por forma a garantir a continuidade do projeto.
               </p>
             </div>
           </Col>
@@ -43,8 +51,15 @@ const About = () => {
         <h2>Organização</h2>
       </div>
       <div className={styles.organization}>
-        {members.map(({ name, src }) => (
-          <Avatar name={name} src={src} />
+        {members.map((role) => (
+          <div id="people-container">
+            <h3>{role.label}</h3>
+            <div id="people-avatar-container">
+              {role.people.map(({ name, src }) => (
+                <Avatar name={name} src={src} />
+              ))}
+            </div>
+          </div>
         ))}
       </div>
     </AppContainer>

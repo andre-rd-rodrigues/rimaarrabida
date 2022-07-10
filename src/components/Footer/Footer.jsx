@@ -43,7 +43,7 @@ const Footer = () => {
             </ul>
           </div>
         </Col>
-        <Col className="d-flex justify-content-center">
+        <Col className={styles.contact}>
           <div className={styles.contacto}>
             <p>Contacto</p>
             <div>

@@ -1,7 +1,16 @@
 .avatar {
+  width: 200px;
+  height: 200px;
+  vertical-align: middle;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-bottom: 50px;
   p {
-    text-align: center;
-    margin-top: 10px;
     font-weight: 500;
+    transform: translateY(50px);
   }
 }

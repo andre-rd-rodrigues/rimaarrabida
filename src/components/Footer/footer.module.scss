@@ -70,3 +70,14 @@
   letter-spacing: 1.5px;
   transform: translateY(30px);
 }
+.contact {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 432px) {
+  .contact {
+    display: block;
+    margin: 30px 0;
+  }
+}

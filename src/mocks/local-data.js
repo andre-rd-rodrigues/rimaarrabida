@@ -41,12 +41,36 @@ const faqs = [
 
 const members = [
   {
-    name: "Sofia Diogo",
-    src: "https://images.unsplash.com/photo-1499887142886-791eca5918cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+    name: "Ana Braz",
+    src: "images/ana.jpeg"
   },
   {
-    name: "Helena Abreu",
-    src: "https://images.unsplash.com/photo-1479936343636-73cdc5aae0c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=800"
+    name: "Alexandra Silva",
+    src: "images/alexandra.jpeg"
+  },
+  {
+    name: "Francisco Antunes",
+    src: "images/francisco.jpeg"
+  },
+  {
+    name: "Joana Acevedo",
+    src: "images/joana.jpeg"
+  },
+  {
+    name: "João Soares",
+    src: "images/joao.jpeg"
+  },
+  {
+    name: "Marta Rainho",
+    src: "images/marta.jpeg"
+  },
+  {
+    name: "Tiago Paulinho",
+    src: "images/alexandra.jpeg"
+  },
+  {
+    name: "Sofia Diogo",
+    src: "images/sofia.jpeg"
   }
 ];
 

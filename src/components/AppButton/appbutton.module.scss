@@ -1,9 +1,0 @@
-@import "styles/mixins";
-
-.button {
-  @include button($red, white);
-  svg {
-    margin-right: 15px;
-    vertical-align: top;
-  }
-}

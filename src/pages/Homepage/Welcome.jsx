@@ -1,6 +1,7 @@
 import AppButton from "components/AppButton/AppButton";
 import React from "react";
 import mountain from "assets/svg/mountainMoon.svg";
+import programa from "assets/docs/programa.pdf";
 import scroll from "assets/lotties/scroll.json";
 import styles from "./welcome.module.scss";
 import Lottie from "components/AppLottie/AppLottie";
@@ -23,7 +24,7 @@ const Welcome = () => {
             <div>
               <h1>RIMA Meeting ´22</h1>
               <h2>21 Outubro</h2>
-              <AppButton icon="download" label="PROGRAMA" />
+              <AppButton icon="download" label="PROGRAMA" download={programa} />
             </div>
           </div>
         </div>

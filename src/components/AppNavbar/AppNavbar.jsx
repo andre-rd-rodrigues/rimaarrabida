@@ -68,7 +68,10 @@ const AppNavbar = () => {
           </nav>
         </Col>
         <Col sm={2} md={2} lg={2} className={styles.inscriçoes}>
-          <AppButton label="INSCRIÇÕES" />
+          <AppButton
+            label="INSCRIÇÕES"
+            link='https://docs.google.com/forms/d/e/1FAIpQLSeItQaNP9BrB97SF6LeTxecsX9f6MrWtUV7g38IJwb1loXHSQ/viewform?usp=sf_link"'
+          />
         </Col>
       </Row>
     </div>

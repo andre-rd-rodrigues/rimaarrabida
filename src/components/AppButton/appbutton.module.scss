@@ -2,6 +2,14 @@
 
 .button {
   @include button($red, white);
+  a {
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
   svg {
     margin-right: 15px;
     vertical-align: top;

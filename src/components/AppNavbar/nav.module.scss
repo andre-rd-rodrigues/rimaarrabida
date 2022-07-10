@@ -21,7 +21,7 @@
     color: $primary !important;
     margin: 0 1.5rem;
     position: relative;
-
+    padding: 0 !important;
     &[class="navbar-brand"] {
       &::after {
         display: none !important;

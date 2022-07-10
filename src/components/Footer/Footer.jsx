@@ -58,7 +58,7 @@ const Footer = () => {
         </Col>
         <Col>
           <div className={styles.logo}>
-            <img src="%PUBLIC_URL%/logo.png" alt="RIMA 2022" />
+            <img src={process.env.PUBLIC_URL + "/logo.png"} alt="RIMA 2022" />
             <p>II RIMA | 2022</p>
             <div>
               <a href="www.facebook.com">

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/rimaarrabida/static/css/main.f45774dd.css",
-    "main.js": "/rimaarrabida/static/js/main.bae0374b.js",
+    "main.js": "/rimaarrabida/static/js/main.bb98d2e5.js",
     "static/media/programa_2021.png": "/rimaarrabida/static/media/programa_2021.db4e99c29d5f5022db16.png",
     "static/media/programa.pdf": "/rimaarrabida/static/media/programa.eab7dbb4f59ed78da522.pdf",
     "static/media/regulamento.pdf": "/rimaarrabida/static/media/regulamento.eab7dbb4f59ed78da522.pdf",
@@ -10,10 +10,10 @@
     "static/media/caduceus.png": "/rimaarrabida/static/media/caduceus.ca5f6e5d9b22c9264051.png",
     "index.html": "/rimaarrabida/index.html",
     "main.f45774dd.css.map": "/rimaarrabida/static/css/main.f45774dd.css.map",
-    "main.bae0374b.js.map": "/rimaarrabida/static/js/main.bae0374b.js.map"
+    "main.bb98d2e5.js.map": "/rimaarrabida/static/js/main.bb98d2e5.js.map"
   },
   "entrypoints": [
     "static/css/main.f45774dd.css",
-    "static/js/main.bae0374b.js"
+    "static/js/main.bb98d2e5.js"
   ]
 }

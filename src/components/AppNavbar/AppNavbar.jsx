@@ -5,14 +5,25 @@ import { HashLink } from "react-router-hash-link";
 import styles from "./nav.module.scss";
 import AppButton from "components/AppButton/AppButton";
 import AppIcon from "components/AppIcon/AppIcon";
+import { motion } from "framer-motion";
+import {
+  containerVariant,
+  scaleEntrance,
+  verticalEntrance
+} from "styles/motion/variants";
 
 const AppNavbar = () => {
   const [show, setShow] = useState(false);
 
   const iconSize = 22;
 
-  const NewNav = () => (
-    <div className={styles.container}>
+  const Horizontal = () => (
+    <motion.div
+      variants={verticalEntrance}
+      initial="hidden"
+      animate="visible"
+      className={styles.container}
+    >
       <Row className="align-items-center" style={{ margin: 0 }}>
         <Col sm={9} md={9} lg={10}>
           <nav className="navbar navbar-expand-lg" id={styles.horizontal}>
@@ -74,30 +85,37 @@ const AppNavbar = () => {
           />
         </Col>
       </Row>
-    </div>
+    </motion.div>
   );
 
   const Vertical = () => (
-    <div className={styles.vertical}>
-      <a
+    <motion.div
+      variants={containerVariant}
+      initial="hidden"
+      animate="visible"
+      className={styles.vertical}
+    >
+      <motion.a
         href="https://www.facebook.com/profile.php?id=100071640553975"
         target="_"
+        variants={scaleEntrance}
       >
         <AppIcon icon="facebook" size={iconSize} color="aqua" />
-      </a>
+      </motion.a>
 
-      <a
+      <motion.a
         href="https://www.instagram.com/reuniaodeinternosdaarrabida/"
         target="_"
+        variants={scaleEntrance}
       >
         <AppIcon icon="instagram" size={iconSize} color="aqua" />
-      </a>
-    </div>
+      </motion.a>
+    </motion.div>
   );
 
   return (
     <>
-      <NewNav />
+      <Horizontal />
       <Vertical />
     </>
   );

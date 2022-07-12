@@ -5,25 +5,37 @@ import CountdownApp from "components/Countdown/Countdown";
 import Title from "components/Title/Title";
 import React from "react";
 import styles from "./trabalhos.module.scss";
+import {
+  containerVariant,
+  horizontalEntrance,
+  scaleEntrance
+} from "styles/motion/variants";
+
+import { motion } from "framer-motion";
 
 const Trabalhos = () => {
   return (
     <Container>
-      <div
+      <motion.div
+        variants={containerVariant}
+        initial="hidden"
+        whileInView="visible"
         style={{
-          minHeight: "50vh"
+          minHeight: "60vh"
         }}
       >
-        <Title label="Trabalhos" />
-        <div className={styles.submit}>
+        <motion.div variants={horizontalEntrance}>
+          <Title label="Trabalhos" />
+        </motion.div>
+        <motion.div variants={horizontalEntrance} className={styles.submit}>
           <p>
             A data limite para a submissão dos resumos é <b>31/08/2022</b>.{" "}
             Consulta o regulamento para saberes como.
           </p>
           <CountdownApp />
           <Button label="REGULAMENTO" icon="download" download={regulamento} />
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </Container>
   );
 };

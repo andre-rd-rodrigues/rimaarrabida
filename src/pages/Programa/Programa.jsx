@@ -2,27 +2,41 @@ import React from "react";
 import { Row, Col } from "react-bootstrap";
 import { program } from "mocks/local-data";
 import styles from "./programa.module.scss";
+import { motion } from "framer-motion";
+import {
+  containerVariant,
+  verticalEntrance,
+  horizontalEntrance
+} from "styles/motion/variants";
 
 const Programa = () => {
   return (
-    <div className={styles.container} id="programa">
-      <h2>Programa</h2>
-      <span className={styles.break} />
+    <motion.div
+      variants={containerVariant}
+      initial="hidden"
+      whileInView="visible"
+      className={styles.container}
+      id="programa"
+    >
+      <motion.h2 variants={verticalEntrance}>Programa</motion.h2>
+      <motion.span variants={horizontalEntrance} className={styles.break} />
 
       <Row className={styles.schedule}>
         <Col md={3}>
-          <div className="program-date">
+          <motion.div variants={horizontalEntrance} className="program-date">
             <h3>{program.date}</h3>
-          </div>
+          </motion.div>
         </Col>
         <Col md={9}>
-          <div className="program-content-container">
+          <motion.div
+            variants={containerVariant}
+            className="program-content-container"
+          >
             {program.program?.map((item) => (
-              <div>
+              <motion.div variants={verticalEntrance}>
                 <div className="program-content-event-hour">
                   <p>{item.hour}</p>
                 </div>
-
                 <div className="program-content-event">
                   {item.event?.map((ev) => (
                     <p>{ev}</p>
@@ -31,14 +45,13 @@ const Programa = () => {
                     <p className="program-speaker">{speaker}</p>
                   ))}
                 </div>
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         </Col>
       </Row>
-
-      <span className={styles.break} />
-    </div>
+      <motion.span variants={horizontalEntrance} className={styles.break} />
+    </motion.div>
   );
 };
 

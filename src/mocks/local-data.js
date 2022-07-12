@@ -32,7 +32,7 @@ const program = {
       hour: "14:00",
       event: [
         "Comunicação e inteligência emocional",
-        "Mesa redonda - “De internos para internos"
+        'Mesa redonda - "De internos para internos"'
       ],
       speakers: undefined
     },

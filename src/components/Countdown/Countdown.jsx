@@ -38,7 +38,7 @@ const CountdownApp = () => {
 
   return (
     <div className={styles.container}>
-      <Countdown date={Date.now() + 1000} renderer={renderer}>
+      <Countdown date={new Date(2022, 10, 31)} renderer={renderer}>
         <Completionist />
       </Countdown>
     </div>

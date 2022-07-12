@@ -6,30 +6,53 @@ import scroll from "assets/lotties/scroll.json";
 import styles from "./welcome.module.scss";
 import Lottie from "components/AppLottie/AppLottie";
 import AppContainer from "components/AppContainer/AppContainer";
+import { motion } from "framer-motion";
+import {
+  containerVariant,
+  horizontalEntrance,
+  scaleEntrance
+} from "styles/motion/variants";
 
 const Welcome = () => {
   return (
     <AppContainer>
-      <div className={styles.container}>
-        <div className={styles.welcome}>
+      <motion.div
+        variants={containerVariant}
+        initial="hidden"
+        whileInView="visible"
+        className={styles.container}
+      >
+        <motion.div variants={horizontalEntrance} className={styles.welcome}>
           <img
             id="welcome-mountain"
             src={mountain}
             alt="Reunião Internos da Arrabida"
           />
-          <div className={styles.content}>
+          <motion.div variants={containerVariant} className={styles.content}>
             <div id="welcome-logo">
-              <img src={process.env.PUBLIC_URL + "/logo.png"} alt="RIMA" />
+              <motion.img
+                variants={scaleEntrance}
+                src={process.env.PUBLIC_URL + "/logo.png"}
+                alt="RIMA"
+              />
             </div>
             <div>
-              <h1>RIMA Meeting ´22</h1>
-              <h2>21 Outubro</h2>
-              <AppButton icon="download" label="PROGRAMA" download={programa} />
+              <motion.h1 variants={horizontalEntrance}>
+                RIMA Meeting ´22
+              </motion.h1>
+              <motion.h2 variants={horizontalEntrance}>21 Outubro</motion.h2>
+              <motion.div variants={horizontalEntrance}>
+                <AppButton
+                  icon="download"
+                  label="PROGRAMA"
+                  download={programa}
+                />
+              </motion.div>
             </div>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
         <Lottie size={230} styles={styles.lottie} animation={scroll} />
-      </div>
+      </motion.div>
     </AppContainer>
   );
 };

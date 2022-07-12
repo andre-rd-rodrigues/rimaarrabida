@@ -3,25 +3,46 @@ import mountain from "assets/images/mountainFaq.png";
 import styles from "./faq.module.scss";
 import { faqs } from "mocks/local-data";
 import Question from "components/AppAccordion/AppAccordion";
+import { motion } from "framer-motion";
+import {
+  containerVariant,
+  verticalEntrance,
+  horizontalEntrance
+} from "styles/motion/variants";
 
 const Faq = () => {
   return (
-    <div className={styles.container} id="faqs">
-      <div id="faq-mountain">
+    <motion.div
+      variants={containerVariant}
+      initial="hidden"
+      whileInView="visible"
+      className={styles.container}
+      id="faqs"
+    >
+      <motion.div variants={horizontalEntrance} id="faq-mountain">
         <img src={mountain} alt="" />
-      </div>
+      </motion.div>
       <div className={styles.faq}>
-        <div id="faq-title">
+        <motion.div variants={verticalEntrance} id="faq-title">
           <span></span>
           <h2>FAQ</h2>
-        </div>
-        <div className={styles.questionsContainer}>
+        </motion.div>
+        <motion.div
+          variants={containerVariant}
+          className={styles.questionsContainer}
+        >
           {faqs?.map((item, index) => (
-            <Question key={index} title={item.question} content={item.answer} />
+            <motion.div variants={horizontalEntrance}>
+              <Question
+                key={index}
+                title={item.question}
+                content={item.answer}
+              />
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

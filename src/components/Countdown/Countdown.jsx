@@ -2,7 +2,7 @@ import React from "react";
 import Countdown from "react-countdown";
 import styles from "./countdown.module.scss";
 
-const CountdownApp = () => {
+const CountdownApp = ({ date }) => {
   const Completionist = () => (
     <p id={styles.encerrado}>Submissões encerradas</p>
   );
@@ -38,7 +38,7 @@ const CountdownApp = () => {
 
   return (
     <div className={styles.container}>
-      <Countdown date={new Date(2022, 10, 31)} renderer={renderer}>
+      <Countdown date={date} renderer={renderer}>
         <Completionist />
       </Countdown>
     </div>

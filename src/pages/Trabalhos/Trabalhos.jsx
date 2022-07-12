@@ -32,7 +32,7 @@ const Trabalhos = () => {
             A data limite para a submissão dos resumos é <b>31/08/2022</b>.{" "}
             Consulta o regulamento para saberes como.
           </p>
-          <CountdownApp />
+          <CountdownApp date={new Date(2022, 8, 31)} />
           <Button label="REGULAMENTO" icon="download" download={regulamento} />
         </motion.div>
       </motion.div>

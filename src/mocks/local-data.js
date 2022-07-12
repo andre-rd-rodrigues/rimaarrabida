@@ -5,7 +5,7 @@ const program = {
       hour: "9:00",
       event: [
         "Sessão de boas vindas",
-        "Projeto Anénoma",
+        "Projeto Anémona",
         "Sexologia em cuidados paliativos"
       ],
       speakers: undefined
@@ -51,12 +51,12 @@ const faqs = [
   },
   {
     question: "Onde posso consultar o programa?",
-    answer: "Pode ser consultado no separador “Programa."
+    answer: 'Pode ser consultado no separador "Programa".'
   },
   {
     question: "Como me posso inscrever?",
     answer:
-      "As inscrições são gratuitas mas obrigatórias. Encontram-se abertas e podem ser realizadas no botão INSCRIÇÕES"
+      "As inscrições são gratuitas mas obrigatórias. Encontram-se abertas e podem ser realizadas no botão INSCRIÇÕES."
   },
   {
     question: "Qual a população alvo?",
@@ -76,7 +76,7 @@ const faqs = [
   {
     question: "Como posso submeter um resumo?",
     answer:
-      "No separador “Trabalhos Científicos” encontra-se o regulamento e o link directo para a submissão de resumos."
+      'No separador “Trabalhos" encontra-se o regulamento para a submissão de resumos.'
   },
   {
     question: "Como posso ficar a par de todas as novidades?",
@@ -84,7 +84,7 @@ const faqs = [
   },
   {
     question: "Quais as datas chave?",
-    answer: `Início de inscrição: 11/07/2022 às 12h00
+    answer: `Início de inscrição: 12/07/2022
       \nInício de submissão de resumos: 11/07/2022 às 00h00. 
       \nData-limite para submissão de resumos: 31/08/2022 às 23h59. 
       \nComunicação dos resultados aos autores: 01/10/2022 até às 23h59, via e-mail para o endereço eletrónico indicado no formulário de submissão.`

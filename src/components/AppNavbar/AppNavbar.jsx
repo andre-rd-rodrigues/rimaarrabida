@@ -70,7 +70,7 @@ const AppNavbar = () => {
         <Col sm={2} md={2} lg={2} className={styles.inscriçoes}>
           <AppButton
             label="INSCRIÇÕES"
-            link='https://docs.google.com/forms/d/e/1FAIpQLSeItQaNP9BrB97SF6LeTxecsX9f6MrWtUV7g38IJwb1loXHSQ/viewform?usp=sf_link"'
+            link="https://docs.google.com/forms/d/e/1FAIpQLSeItQaNP9BrB97SF6LeTxecsX9f6MrWtUV7g38IJwb1loXHSQ/viewform?usp=sf_link"
           />
         </Col>
       </Row>
@@ -79,11 +79,17 @@ const AppNavbar = () => {
 
   const Vertical = () => (
     <div className={styles.vertical}>
-      <a href="www.facebook.com">
+      <a
+        href="https://www.facebook.com/profile.php?id=100071640553975"
+        target="_"
+      >
         <AppIcon icon="facebook" size={iconSize} color="aqua" />
       </a>
 
-      <a href="www.instagram.com">
+      <a
+        href="https://www.instagram.com/reuniaodeinternosdaarrabida/"
+        target="_"
+      >
         <AppIcon icon="instagram" size={iconSize} color="aqua" />
       </a>
     </div>

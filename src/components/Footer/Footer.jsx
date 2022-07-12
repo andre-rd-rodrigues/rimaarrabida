@@ -61,10 +61,16 @@ const Footer = () => {
             <img src={process.env.PUBLIC_URL + "/logo.png"} alt="RIMA 2022" />
             <p>II RIMA | 2022</p>
             <div>
-              <a href="www.facebook.com">
+              <a
+                href="https://www.facebook.com/profile.php?id=100071640553975"
+                target="_"
+              >
                 <AppIcon icon="facebook" size={15} color="white" />
               </a>
-              <a href="www.instagram.com">
+              <a
+                href="https://www.instagram.com/reuniaodeinternosdaarrabida/"
+                target="_"
+              >
                 <AppIcon icon="instagram" size={15} color="white" />
               </a>
             </div>

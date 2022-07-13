@@ -1,6 +1,6 @@
 {
   "name": "rima",
-  "homepage": "https://www.rimarrabida.pt/",
+  "homepage": "https://www.rimarrabida.pt",
   "author": {
     "name": "Andre Rodrigues",
     "url": "https://andre-rd-rodrigues.github.io/portfolio"
@@ -39,7 +39,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b gh-pages -d build",
+    "deploy": "echo 'www.rimarrabida.pt' > ./build/CNAME && gh-pages -b gh-pages -d build",
     "lint": "eslint \"src/**/*.{js,jsx}\"",
     "lint:fix": "eslint \"src/**/*.{js,jsx}\" --fix"
   },

@@ -5,11 +5,7 @@ import CountdownApp from "components/Countdown/Countdown";
 import Title from "components/Title/Title";
 import React from "react";
 import styles from "./trabalhos.module.scss";
-import {
-  containerVariant,
-  horizontalEntrance,
-  scaleEntrance
-} from "styles/motion/variants";
+import { containerVariant, horizontalEntrance } from "styles/motion/variants";
 
 import { motion } from "framer-motion";
 

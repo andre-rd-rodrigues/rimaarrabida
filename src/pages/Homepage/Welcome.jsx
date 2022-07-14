@@ -45,6 +45,7 @@ const Welcome = () => {
                 <AppButton
                   icon="download"
                   label="PROGRAMA"
+                  downloadLabel="rima_programa.pdf"
                   download={programa}
                 />
               </motion.div>

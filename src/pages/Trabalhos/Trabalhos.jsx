@@ -29,7 +29,12 @@ const Trabalhos = () => {
             Consulta o regulamento para saberes como.
           </p>
           <CountdownApp date={new Date(2022, 8, 31)} />
-          <Button label="REGULAMENTO" icon="download" download={regulamento} />
+          <Button
+            label="REGULAMENTO"
+            icon="download"
+            downloadLabel="rima_regulamento.pdf"
+            download={regulamento}
+          />
         </motion.div>
       </motion.div>
     </Container>

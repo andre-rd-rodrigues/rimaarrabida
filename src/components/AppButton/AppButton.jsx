@@ -2,7 +2,7 @@ import React from "react";
 import FeatherIcon from "feather-icons-react";
 import styles from "./appbutton.module.scss";
 
-const AppButton = ({ label, icon, link, download }) => {
+const AppButton = ({ label, icon, link, download, downloadLabel }) => {
   const Content = () => (
     <>
       {icon && <FeatherIcon icon={icon} size={20} />}
@@ -18,7 +18,7 @@ const AppButton = ({ label, icon, link, download }) => {
       );
     if (download)
       return (
-        <a href={download} download="rima_programa_2022" target="_">
+        <a href={download} download={downloadLabel} target="_">
           <Content />
         </a>
       );

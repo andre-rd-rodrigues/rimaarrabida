@@ -19,7 +19,7 @@ const program = {
       hour: "11:00",
       event: [
         "Luto fisiológico vs patológico",
-        "Apresentação comunicações orais"
+        "Apresentação de comunicações orais"
       ],
       speakers: undefined
     },

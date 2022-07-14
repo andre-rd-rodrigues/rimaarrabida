@@ -19,7 +19,7 @@ const program = {
       hour: "11:00",
       event: [
         "Luto fisiológico vs patológico",
-        "Apresentação de posters / comunicações orais"
+        "Apresentação comunicações orais"
       ],
       speakers: undefined
     },
@@ -37,7 +37,7 @@ const program = {
       speakers: undefined
     },
     {
-      hour: "17:30",
+      hour: "17:00",
       event: ["Entrega de prémios", "Sessão de encerramento"],
       speakers: undefined
     }
@@ -84,8 +84,8 @@ const faqs = [
   },
   {
     question: "Quais as datas chave?",
-    answer: `Início de inscrição: 12/07/2022
-      \nInício de submissão de resumos: 11/07/2022 às 00h00. 
+    answer: `Início de inscrição: 14/07/2022
+      \nInício de submissão de resumos: 14/07/2022 às 00h00. 
       \nData-limite para submissão de resumos: 31/08/2022 às 23h59. 
       \nComunicação dos resultados aos autores: 01/10/2022 até às 23h59, via e-mail para o endereço eletrónico indicado no formulário de submissão.`
   }

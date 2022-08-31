@@ -31,7 +31,7 @@ const AppNavbar = () => {
               <img src={process.env.PUBLIC_URL + "/logo.png"} alt="RIMA 2022" />
             </Link>
             <button
-              class="navbar-toggler"
+              className="navbar-toggler"
               type="button"
               data-toggle="collapse"
               data-target="#navbarSupportedContent"

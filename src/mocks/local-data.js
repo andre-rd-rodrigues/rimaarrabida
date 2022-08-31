@@ -3,11 +3,17 @@ const program = {
   program: [
     {
       hour: "9:00",
-      event: [
-        "Sessão de boas vindas",
-        "Projeto Anémona",
-        "Sexologia em cuidados paliativos"
-      ],
+      event: ["Sessão de boas vindas"],
+      speakers: undefined
+    },
+    {
+      hour: "9:15",
+      event: ["Projeto Anémona"],
+      speakers: ["Dr. Miguel Saraiva"]
+    },
+    {
+      hour: "10:00",
+      event: ["Onco-sexologia"],
       speakers: undefined
     },
     {
@@ -16,11 +22,16 @@ const program = {
       speakers: undefined
     },
     {
-      hour: "11:00",
+      hour: "10:45",
       event: [
-        "Luto fisiológico vs patológico",
+        "Luto patológico: como identificar e abordar",
         "Apresentação de comunicações orais"
       ],
+      speakers: ["Dra. Maria Amélia Aleixo", "Dra Margarida Magalhães"]
+    },
+    {
+      hour: "11:30",
+      event: ["Apresentação de comunicações orais"],
       speakers: undefined
     },
     {
@@ -29,20 +40,30 @@ const program = {
       speakers: undefined
     },
     {
-      hour: "14:00",
-      event: [
-        "Comunicação e inteligência emocional",
-        'Mesa redonda - "De internos para internos"'
-      ],
-      speakers: undefined
+      hour: "14:30",
+      event: ["Inteligência emocional na comunicação em MGF"],
+      speakers: ["Dra Paula Madeira", "Dra Eugénia Raimundo"]
     },
     {
-      hour: "17:00",
-      event: ["Entrega de prémios", "Sessão de encerramento"],
+      hour: "15:15",
+      event: ["Descomplicar o currículo em MGF"],
+      speakers: ["Dra Marta Nazha"]
+    },
+    {
+      hour: "16:00",
+      event: [
+        "Recém-especialista no ACeS Arrábida: perspetiva dos jovens médicos"
+      ],
+      speakers: ["Dra Sofia Belo"]
+    },
+    {
+      hour: "16:45",
+      event: ["Anúncio dos vencedores", "Sessão de encerramento"],
       speakers: undefined
     }
   ]
 };
+
 const faqs = [
   {
     question: "Em que formato será realizada a RIMA?",
@@ -86,7 +107,7 @@ const faqs = [
     question: "Quais as datas chave?",
     answer: `Início de inscrição: 14/07/2022
       \nInício de submissão de resumos: 14/07/2022 às 00h00. 
-      \nData-limite para submissão de resumos: 31/08/2022 às 23h59. 
+      \nData-limite para submissão de resumos: 15/09/2022 às 23h59. 
       \nComunicação dos resultados aos autores: 01/10/2022 até às 23h59, via e-mail para o endereço eletrónico indicado no formulário de submissão.`
   }
 ];

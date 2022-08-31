@@ -1,21 +1,19 @@
-# Project name
+# RIMA Arrábida 2022
 
-Description
+RIMA - Reunião de Internos da Arrábida, trata-se de um evento anual de submissão e apresentação de trabalhos científicos no âmbito da medicina.
 
-Website: url
+Website: https://www.rimarrabida.pt/
 
 ## Structure
 
 This project is composed by:
 
--
+- Pages - main components
+- Components - reusable components
 
-Testing (RTL and Jest):
+### Local data
 
-- Unit Testing
-- Integration Testing
-- Snapshots
-- utils/test-utils.jsx
+- Program, faqs and members
 
 ### Hosting
 

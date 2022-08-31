@@ -25,10 +25,11 @@ const Trabalhos = () => {
         </motion.div>
         <motion.div variants={horizontalEntrance} className={styles.submit}>
           <p>
-            A data limite para a submissão dos resumos é <b>31/08/2022</b>.{" "}
+            A data limite para a submissão dos resumos é <b>15/09/2022</b>.{" "}
             Consulta o regulamento para saberes como.
           </p>
-          <CountdownApp date={new Date(2022, 8, 31)} />
+
+          <CountdownApp date={new Date(2022, 8, 15)} />
           <Button
             label="REGULAMENTO"
             icon="download"

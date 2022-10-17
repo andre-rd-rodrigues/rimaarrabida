@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.58c987dd.css",
-    "main.js": "/static/js/main.2c045f2e.js",
+    "main.js": "/static/js/main.c752e86d.js",
+    "static/media/programa.pdf": "/static/media/programa.3b19799807c6437e723c.pdf",
     "static/media/programa_2021.png": "/static/media/programa_2021.db4e99c29d5f5022db16.png",
-    "static/media/programa.pdf": "/static/media/programa.da7a260037743a29ef12.pdf",
     "static/media/mountainMoon.svg": "/static/media/mountainMoon.9468d7fa796af7c82e4993650b70cca6.svg",
     "static/media/regulamento.pdf": "/static/media/regulamento.7908830f1945da98432b.pdf",
     "static/media/mountainFaq.png": "/static/media/mountainFaq.c7da2f45d61368819e68.png",
     "static/media/caduceus.png": "/static/media/caduceus.ca5f6e5d9b22c9264051.png",
     "index.html": "/index.html",
     "main.58c987dd.css.map": "/static/css/main.58c987dd.css.map",
-    "main.2c045f2e.js.map": "/static/js/main.2c045f2e.js.map"
+    "main.c752e86d.js.map": "/static/js/main.c752e86d.js.map"
   },
   "entrypoints": [
     "static/css/main.58c987dd.css",
-    "static/js/main.2c045f2e.js"
+    "static/js/main.c752e86d.js"
   ]
 }

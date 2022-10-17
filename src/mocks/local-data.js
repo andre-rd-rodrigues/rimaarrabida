@@ -14,7 +14,7 @@ const program = {
     {
       hour: "10:00",
       event: ["Onco-sexologia"],
-      speakers: undefined
+      speakers: ["Dra. Cristina Nave"]
     },
     {
       hour: "10:30",
@@ -23,16 +23,18 @@ const program = {
     },
     {
       hour: "10:45",
-      event: [
-        "Luto patológico: como identificar e abordar",
-        "Apresentação de comunicações orais"
-      ],
-      speakers: ["Dra. Maria Amélia Aleixo", "Dra Margarida Magalhães"]
+      event: ["Luto patológico: como identificar e abordar"],
+      speakers: ["Dra. Maria Amélia Aleixo", "Dra. Margarida Magalhães"]
     },
     {
       hour: "11:30",
       event: ["Apresentação de comunicações orais"],
-      speakers: undefined
+      speakers: [
+        `“Nem todas as lombalgias são só lombalgias” - Dra. Beatriz Coelho`,
+        `“Re-Olhar o Rastreio do Cancro Oral - Relato de Prática” - Dra. Catarina Brás Carvalho"`,
+        `“Foramen Ovale Patente e Acidente Vascular Cerebral” - Dra. Marta Marques Santana
+      `
+      ]
     },
     {
       hour: "13:00",
@@ -42,19 +44,19 @@ const program = {
     {
       hour: "14:30",
       event: ["Inteligência emocional na comunicação em MGF"],
-      speakers: ["Dra Paula Madeira", "Dra Eugénia Raimundo"]
+      speakers: ["Dra. Paula Madeira", "Dra. Eugénia Raimundo"]
     },
     {
       hour: "15:15",
       event: ["Descomplicar o currículo em MGF"],
-      speakers: ["Dra Marta Nazha"]
+      speakers: ["Dra. Marta Nazha"]
     },
     {
       hour: "16:00",
       event: [
         "Recém-especialista no ACeS Arrábida: perspetiva dos jovens médicos"
       ],
-      speakers: ["Dra Sofia Belo"]
+      speakers: ["Dra. Sofia Belo", "Dra. Rita Nascimento"]
     },
     {
       hour: "16:45",

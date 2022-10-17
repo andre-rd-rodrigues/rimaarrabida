@@ -15,6 +15,11 @@ This project is composed by:
 
 - Program, faqs and members
 
+## Update and deploy
+
+1. Make changes
+2. npm run deploy
+
 ### Hosting
 
 Hosted with github pages, from gh-pages branch.

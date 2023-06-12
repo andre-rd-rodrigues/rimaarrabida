@@ -2,7 +2,7 @@
 
 RIMA - Reunião de Internos da Arrábida, trata-se de um evento anual de submissão e apresentação de trabalhos científicos no âmbito da medicina.
 
-Website: https://www.rimarrabida.pt/
+Website: [https://www.rimarrabida.pt/](https://kaleidoscopic-cheesecake-db7480.netlify.app/) - now deprecated
 
 ## Structure
 
